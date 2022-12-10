@@ -8,9 +8,26 @@ public class Triengle {
     private double a3;
 
     public Triengle(int a1, int a2, int a3){
-        if(a1 > 0){this.a1 = a1;}
-        if(a2 > 0){this.a2 = a2;}
-        if(a3 > 0){this.a3 = a3;}
+        if(a1 > 0){
+            this.a1 = a1;
+        }
+        else{
+            throw new RuntimeException("There is no figure whith such parametrs");
+        }
+
+        if(a2 > 0){
+            this.a2 = a2;
+        }
+        else{
+            throw new RuntimeException("There is no figure whith such parametrs");
+        }
+
+        if(a3 > 0){
+            this.a3 = a3;
+        }
+        else{
+            throw new RuntimeException("There is no figure whith such parametrs");
+        }
     }
 
     public boolean real_figure(){
